@@ -23,44 +23,100 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:900&display=swap" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
   <link rel="stylesheet" href="static/css/home.css" media="screen" />
+  
+  <!-- boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <!-- Custom fonts for this template -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  
+    <!-- Custom styles for this template -->
+  <link href="css/agency.min.css" rel="stylesheet">
+  
 </head>
 
 <body>
 
-  <section class="is-bold">
+<!-- change -->
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar purple navbar-expand-lg navbar-dark" id="mainNav">
     <div class="container">
-      <h1 class="hero-text text-faded">A Stellar Community Experiment.</h1>
-      <h1 class="hero-text text-fading">Pass on the Torch.</h1>
-      <h1 class="hero-text">Show the Stellar strength.</h1>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="static/img/logo_stellar_torch.svg"></img></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+	<div class="container">
+		 <div class="intro-text">
+			  <h1 class="hero-text text-faded title1">A Stellar Community Experiment</h1>
+			  <h1 class="hero-text text-fading title2">Pass on the Torch</h1>
+			  <h1 class="hero-text title3">Show the Stellar strength</h1>
+		  </div>
+    </div>
+    <div class="container">
+          <div id="map"></div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="page-section purple" id="stats">
+    <div class="container ">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <h4 class="service-heading">Kilometres Covered</h4>
+			<p class="stat" id="stat_kms">0</p>
+		</div>
+		
+		 <div class="col-md-4">
+          <h4 class="service-heading">Torch Bearers</h4>
+			<p class="stat" id="stat_bearers">0</p>
+		</div>
+		
+		 <div class="col-md-4">
+          <h4 class="service-heading">Total fees</h4>
+			<p class="stat" id="stat_fees">$0.00000</p>
+		</div>
+      </div>
     </div>
   </section>
+  
+  <!-- change -->
 
-  <section class="container is-widescreen is-fullhd">
-      <div id="map"></div>
+
+  <section class="page-section" id="about">
+    <div class="container">
+	<div class="row">
+	<div class="col-md-8">
+      <h2 class="section-heading">About the experiment </h2>
+	  <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+
+		Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. 
+		</p>
+    </div>
+	<div class="col-md-4">
+	<img src="static/img/globe.png">
+    </div>
+	</div>
   </section>
 
-  <footer>
-    <nav class="level">
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Kilometres Covered</p>
-          <p class="stat" id="stat_kms">0</p>
-        </div>
-      </div>
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Torch Bearers</p>
-          <p class="stat" id="stat_bearers">0</p>
-        </div>
-      </div>
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="heading">Total Fees</p>
-          <p class="stat" id="stat_fees">$0.00000</p>
-        </div>
-      </div>
-    </nav>
-  </footer>
+  
+
+ 
 
   <script src="static/js/home.js"></script>
 
@@ -102,6 +158,10 @@
       distance: 0
     }
   </script>
+  
+    <!-- Bootstrap core JavaScript -->
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+  
 </body>
 
 </html>
